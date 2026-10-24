@@ -1,0 +1,20 @@
+{
+  "name": "Осложнения травм · Blades ’68",
+  "version": "1.2.1",
+  "manifest_version": 1,
+  "description": "Пул d6, критические результаты и три таблицы осложнений травм для Blades ’68 + Deep Cuts.",
+  "icon": "https://opnmn-v.github.io/b68_tables/icon.svg",
+  "action": {
+    "title": "Осложнения травм",
+    "icon": "https://opnmn-v.github.io/b68_tables/icon.svg",
+    "popover": "https://opnmn-v.github.io/b68_tables/index.html",
+    "width": 420,
+    "height": 700
+  },
+  "permissions": [
+    {
+      "name": "clipboard-write",
+      "reason": "Копирование результата броска для группы."
+    }
+  ]
+}
