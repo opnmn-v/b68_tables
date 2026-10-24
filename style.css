@@ -21,3 +21,8 @@ header .intro{font-size:14px!important;color:var(--ink)!important;line-height:1.
 .vice-box{padding:0}.vice-box .primary{margin-top:0}
 .vice-box .vice-option{background:var(--wash);border-left:3px solid var(--blue);padding:11px 13px;margin:16px 0 0;color:var(--ink);font-size:14px;line-height:1.5}
 #vice-history li{font-size:12px;font-weight:400}
+
+/* 1.3.5: lighter separators and regular text labels */
+header{border-bottom:1px solid var(--line)}
+header .intro{background:none;border-left:0;padding:0}
+.caption,.history-heading h2{font-family:Arial,sans-serif;font-size:14px;font-weight:400;letter-spacing:normal;line-height:1.5}
