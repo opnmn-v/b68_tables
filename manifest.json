@@ -1,13 +1,13 @@
 {
   "name": "Таблицы передышки · Blades ’68",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "manifest_version": 1,
   "description": "Последствия травм и запой для Blades ’68 + Deep Cuts.",
   "icon": "https://opnmn-v.github.io/b68_tables/icon.svg",
   "action": {
     "title": "Таблицы передышки",
     "icon": "https://opnmn-v.github.io/b68_tables/icon.svg",
-    "popover": "https://opnmn-v.github.io/b68_tables/index.html",
+    "popover": "https://opnmn-v.github.io/b68_tables/index.html?v=1.3.2",
     "width": 420,
     "height": 700
   },

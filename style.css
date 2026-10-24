@@ -5,3 +5,13 @@
 .history-section{border-top:2px solid var(--ink);margin-top:24px;padding-top:12px}.history-heading{display:flex;flex-wrap:wrap;gap:5px 12px;justify-content:space-between;align-items:center}.history-heading h2{font-size:20px;margin:0}#history-count{font-size:11px;color:var(--muted)}.history-note{font-size:11px;color:var(--muted)}#history{max-height:430px;overflow:auto}#history li{padding:12px 10px}#history .history-flavor{font-style:italic;font-weight:400;color:#575751;font-size:12px;margin:10px 0 7px}#history .history-mechanics{font-size:12px;font-weight:400;margin:0}#clear:disabled{opacity:.4;cursor:default}
 
 [hidden]{display:none!important}.tabs{display:flex;gap:0;border-bottom:3px solid var(--ink);margin:0 0 20px}.tab{font-family:'Arial Narrow','Liberation Sans Narrow',Impact,Arial,sans-serif;font-size:17px;font-weight:900;color:var(--blue);background:#e7eaf0;border:0;padding:11px 14px;cursor:pointer;flex:1;text-align:center;line-height:1.1}.tab+.tab{border-left:2px solid var(--paper)}.tab.active{background:var(--orange);color:white}main:before{display:none}main{padding-left:22px}header .intro{font-size:14px;color:var(--ink);line-height:1.55;background:var(--wash);padding:12px 14px;border-left:3px solid var(--orange);margin-top:16px}#result-label:empty{display:none}.result-card{border:1.5px solid var(--orange);border-radius:20px;padding:19px 16px 15px;margin-top:27px}.vice-box{padding:4px 0 0}.vice-box p{color:var(--muted);font-size:13px}.vice-box .primary{margin-top:18px}#vice-mechanics{margin:0 0 13px}.tab:focus-visible{outline:3px solid var(--blue);outline-offset:2px}@media(max-width:340px){.tab{font-size:14px;padding:10px 7px}main{padding:16px 13px}}
+
+/* 1.3.2: consistent rulebook tabs and controls */
+main:before{display:none!important}main{padding-left:22px!important}
+.tabs{display:flex!important;gap:2px;border-bottom:2px solid var(--blue);margin:0 0 20px}
+.tab{appearance:none;flex:1;min-width:0;background:#e7eaf0;border:0;border-radius:0;color:var(--blue);font-family:'Arial Narrow','Liberation Sans Narrow',Impact,Arial,sans-serif;font-weight:900;font-size:15px;line-height:1.15;text-align:center;padding:12px 5px;cursor:pointer}
+.tab+.tab{border-left:0}.tab.active{background:#e7eaf0;color:var(--blue);box-shadow:inset 0 -4px var(--orange)}.tab:hover{background:#dce1e8}
+.eyebrow,.eyebrow span{font-size:11px!important;letter-spacing:.7px!important}.eyebrow span{margin-left:5px}
+header .intro{font-size:14px!important;color:var(--ink)!important;line-height:1.5;font-weight:400}header .intro strong{color:var(--ink)}
+.stepper{margin-bottom:24px!important}.stepper input{text-align:center!important;padding-left:22px}
+#vice-panel footer{display:none}

@@ -1,1 +1,1 @@
-Распакуйте содержимое в корень ветки main с заменой файлов. URL манифеста: https://opnmn-v.github.io/b68_tables/manifest.json
+Распакуйте архив и загрузите содержимое в корень ветки main с заменой всех одноимённых файлов. Проверьте в репозитории manifest.json версии 1.3.2 и в index.html адреса style.css?v=1.3.2 и app.mjs?v=1.3.2. GitHub Pages URL: https://opnmn-v.github.io/b68_tables/manifest.json
