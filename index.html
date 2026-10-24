@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#ffffff"><title>Таблицы передышки · Blades ’68</title>
-<link rel="icon" href="./icon.svg"><link rel="stylesheet" href="./style.css?v=1.3.2">
+<link rel="icon" href="./icon.svg"><link rel="stylesheet" href="./style.css?v=1.3.3">
 </head>
 <body>
 <main>
@@ -32,12 +32,12 @@
 
 </div>
 <div id="vice-panel" hidden>
-<header><span class="eyebrow">BLADES ’68 <span>× DEEP CUTS</span></span><h1>Запой</h1><p class="intro">Во время передышки заплатите <strong>1 монету</strong> и снимите весь стресс. Это не тратит действие передышки. Если до снятия стресса было <strong>больше 6</strong>, бросьте 1d6 по таблице запоя. При 6 «Потерянное время» займёт одно действие передышки.</p></header>
-<div class="vice-box"><h2>Бросок на запой</h2><p>Если до снятия было 6 стресса или меньше, бросок не нужен. Запой не зависит от количества кубов травм.</p><button type="button" class="primary" id="vice-roll">Узнать последствие <span aria-hidden="true">↗</span></button></div>
+<header><span class="eyebrow">BLADES ’68 <span>× DEEP CUTS</span></span><h1>Запой</h1><p class="intro">Когда во время передышки утоляешь порок и у тебя больше 6 стресса, ты уходишь в запой. Очисти стресс, узнай ниже, что случилось, и расскажи другим, как это произошло.</p></header>
+<div class="vice-box"><button type="button" class="primary" id="vice-roll">Узнать последствие <span aria-hidden="true">↗</span></button><p class="vice-option">Можно отказаться от последствий запоя. Тогда персонаж забывается в своём пороке и пропускает эту передышку. Пока он не вернётся, играй другим персонажем. Обычно он возвращается после следующего дела.</p></div>
 <section id="vice-result" class="result-card" aria-live="polite" hidden><div class="result-top"><span class="eyebrow">ЗАПОЙ · 1d6</span></div><div id="vice-die" class="dice"></div><h2 id="vice-title"></h2><p id="vice-flavor" class="flavor"></p><div class="mechanics-label">МЕХАНИКА</div><p id="vice-mechanics"></p><button type="button" id="vice-copy" class="quiet">Скопировать механику</button><span id="vice-copy-status" role="status"></span></section>
 <section class="history-section"><div class="history-heading"><h2>История запоя <span id="vice-history-count"></span></h2><button type="button" id="vice-clear" class="quiet">Очистить историю</button></div><p id="vice-empty" class="history-note">Бросков пока нет.</p><ol id="vice-history"></ol></section>
-<details><summary>Об этой таблице</summary><p>Домашняя адаптация: процедура и шесть исходов из Deep Cuts, описания в духе Blades ’68. «Привлёк неприятности» сверяйте с текущими правилами неприятностей вашей кампании. Эффекты записывайте вручную.</p></details>
+<details><summary>Об этой таблице</summary><p>Домашняя адаптация запоя для Blades ’68 и Deep Cuts. Применяйте последствия к своей кампании и записывайте изменения в лист команды или персонажа.</p></details>
 <footer>Запой происходит только при стрессе выше 6 до снятия.</footer>
 </div>
-</main><script type="module" src="./app.mjs?v=1.3.2"></script>
+</main><script type="module" src="./app.mjs?v=1.3.3"></script>
 </body></html>
