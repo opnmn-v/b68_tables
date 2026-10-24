@@ -16,15 +16,8 @@ header .intro{font-size:14px!important;color:var(--ink)!important;line-height:1.
 .stepper{margin-bottom:24px!important}.stepper input{text-align:center!important;padding-left:22px}
 #vice-panel footer{display:none}
 
-/* 1.3.3: shared type hierarchy */
-:root{--type:'Arial Narrow','Liberation Sans Narrow',Arial,sans-serif;font-family:var(--type)}
-body,button,input{font-family:var(--type)}
-h1,h2,legend,summary,.caption,.tab,.eyebrow{font-family:var(--type);font-stretch:normal}
-h1{font-size:30px;line-height:1.1;letter-spacing:-.4px;font-weight:800}
-h2,#result-title,#vice-title{font-size:23px;line-height:1.15;letter-spacing:0;font-weight:800}
-.history-heading h2{font-size:20px}.eyebrow,.eyebrow span{font-size:11px!important;font-weight:800}
-.tab{font-family:var(--type);font-size:15px;font-weight:800}
-header .intro,.level,.vice-option,#result-text,#vice-mechanics{font-family:var(--type);font-size:14px;line-height:1.5}
+
+/* Keep the original body typography; only the rulebook headings are condensed. */
 .vice-box{padding:0}.vice-box .primary{margin-top:0}
-.vice-box .vice-option{background:var(--wash);border-left:3px solid var(--blue);padding:11px 13px;margin:16px 0 0;color:var(--ink)}
+.vice-box .vice-option{background:var(--wash);border-left:3px solid var(--blue);padding:11px 13px;margin:16px 0 0;color:var(--ink);font-size:14px;line-height:1.5}
 #vice-history li{font-size:12px;font-weight:400}
