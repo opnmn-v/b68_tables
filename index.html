@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffffff"><title>Осложнения травм · Blades ’68</title>
+<link rel="icon" href="./icon.svg"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main>
+<header><span class="eyebrow">BLADES ’68 <span>× DEEP CUTS</span></span><h1>Осложнения травм</h1><p>После дела. До передышки.</p></header>
+<form id="form">
+<fieldset><legend>Максимальный уровень травмы</legend>
+<label class="level"><input type="radio" name="level" value="1" checked><span>1 - Легкая травма</span></label>
+<label class="level"><input type="radio" name="level" value="2"><span>2 - Серьезная</span></label>
+<label class="level"><input type="radio" name="level" value="3"><span>3 - Критическая</span></label>
+</fieldset>
+<label for="count" class="caption">Количество кубов d6</label>
+<div class="stepper"><button type="button" id="minus" aria-label="Убрать один куб">−</button><input id="count" type="number" min="1" max="100" step="1" value="1" inputmode="numeric" required aria-describedby="pool-hint"><span>d6</span><button type="button" id="plus" aria-label="Добавить один куб">+</button></div>
+<p class="hint" id="pool-hint">Сумма уровней всех текущих травм.<br>Например: 1 + 1 + 2 → 4d6, уровень 2.</p>
+<button class="primary" type="submit">Узнать осложнение <span aria-hidden="true">↗</span></button>
+</form>
+<section id="result" aria-live="polite" aria-atomic="true" hidden>
+<div class="result-top"><span id="result-label" class="eyebrow"></span><span id="result-pool" class="muted"></span></div>
+<div id="dice" class="dice" aria-label="Выпавшие кубы"></div>
+<h2 id="result-title"></h2><p id="result-flavor" class="flavor"></p><div class="mechanics-label">МЕХАНИКА</div><p id="result-text"></p>
+<button type="button" id="copy" class="quiet">Скопировать результат</button><span id="copy-status" role="status"></span>
+</section>
+<section id="history-wrap" class="history-section"><div class="history-heading"><h2>История бросков <span id="history-count"></span></h2><button type="button" id="clear" class="quiet">Очистить историю</button></div><p id="history-storage" class="history-note"></p><p id="history-empty" class="history-note">Бросков пока нет.</p><ol id="history"></ol></section>
+<details><summary>Как это работает</summary><p>Один бросок на персонажа с травмами. Количество d6 — сумма уровней всех текущих травм. Таблица — по максимальному уровню. Учитывается старший куб; две и более шестёрки означают крит.</p><p>Без травм бросок не нужен. Здесь таблицы обычных персонажей; для Hull они другие. Результаты видны только вам; их можно скопировать для группы.</p><p>Штрафы и травмы вносите в лист вручную. Снятие исходной травмы не отменяет полученное осложнение.</p></details>
+<footer>Старший куб решает. Две шестёрки — крит.</footer>
+</main><script type="module" src="./app.mjs"></script>
+</body></html>
